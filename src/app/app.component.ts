@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IMonster } from './models/monster';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  monster1: IMonster = {
+    name: "Hans Jensen",
+    vitality: 100,
+    strength: 90,
+    stamina: 100,
+  };
+
+  monster2: IMonster = {
+    name: "Hans Jensen",
+    vitality: 100,
+    strength: 80,
+    stamina: 100,
+  };
 }
