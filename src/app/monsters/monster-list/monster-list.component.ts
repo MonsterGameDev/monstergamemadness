@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { MonstersService } from './../../services/monsters.service';
 import { IMonster } from '../../models/monster';
 
@@ -8,26 +8,19 @@ import { IMonster } from '../../models/monster';
   styleUrls: ['./monster-list.component.css']
 })
 export class MonsterListComponent implements OnInit {
+  @Input() monsters: IMonster[];
+  
   @Output()
-    chosenMonster: EventEmitter<IMonster> = new EventEmitter<IMonster>();
+    selectedMonster: EventEmitter<IMonster> = new EventEmitter<IMonster>();
 
-  monsters: IMonster[] = [];
-
-  constructor(private _monstersService: MonstersService) { }
+  constructor() { }
 
   ngOnInit() {
-    this._monstersService.getMonsters()
-      .subscribe(
-        data => {
-          this.monsters = data;
-        },
-        e => console.log(e),
-        () => console.log ("Monster fetching completed")
-      )
+    
   }
 
   chooseMonster(monster: IMonster): void {
-    this.chosenMonster.emit(monster);
+    this.selectedMonster.emit(monster);
   }
 
 }

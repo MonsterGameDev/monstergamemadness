@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Uglemanden",
+        "avatarUrl": "../../assets/images/fighter8.jpg",
+        "vitality": 100,
+        "stamina": 90,
+        "strength": 90
+    },
+    {
+        "id": 2,
+        "name": "Bent Ove",
+        "avatarUrl": "../../assets/images/fighter6.jpg",
+        "vitality": 90,
+        "stamina": 90,
+        "strength": 100
+        
+    },
+    {
+        "id": 3,
+        "name": "Herbert Marianne Andersen",
+        "avatarUrl": "../../assets/images/fighter5.jpg",
+        "vitality": 90,
+        "stamina": 100,
+        "strength": 90
+        
+    }
+]

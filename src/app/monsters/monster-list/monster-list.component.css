@@ -1,6 +1,6 @@
 .monsterItem {
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
     border: 4px ridge gold;
     background-color: rgba(0,0,0,.8);
     color:white;
@@ -13,5 +13,7 @@
 .monsterList {
    display: grid;
    grid-template-rows: auto;
-   grid-gap:.5em;
+   grid-gap:2em;
+   justify-content:center;
+   
 }

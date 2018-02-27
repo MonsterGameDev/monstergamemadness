@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Hans Jensen",
-        "avatarUrl": "../../assets/images/fighter1.png",
+        "avatarUrl": "../../assets/images/fighter3.png",
         "vitality": 100,
         "stamina": 90,
         "strength": 90
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Furious Sam",
-        "avatarUrl": "../../assets/images/fighter1.png",
+        "avatarUrl": "../../assets/images/fighter1.jpg",
         "vitality": 90,
         "stamina": 90,
         "strength": 100
@@ -19,7 +19,7 @@
     {
         "id": 3,
         "name": "Zaradetch",
-        "avatarUrl": "../../assets/images/fighter1.png",
+        "avatarUrl": "../../assets/images/fighter2.png",
         "vitality": 90,
         "stamina": 100,
         "strength": 90
@@ -28,7 +28,7 @@
     {
         "id": 4,
         "name": "Rille",
-        "avatarUrl": "../../assets/images/fighter1.png",
+        "avatarUrl": "../../assets/images/fighter4.png",
         "vitality": 90,
         "stamina": 90,
         "strength": 100

@@ -10,12 +10,21 @@ import { IMonster } from '../models/monster';
 
 @Injectable()
 export class MonstersService {
-  private serviceUrl = "../../assets/api/statsCollection.json";
+  private serviceUrlPlayer1 = "../../assets/api/statsCollection1.json";
+  private serviceUrlPlayer2 = "../../assets/api/statsCollection2.json";
 
-  getMonsters(): Observable<IMonster[]> {
-    return this._http.get<IMonster[]>(this.serviceUrl)
+  getPlayer1Monsters(): Observable<IMonster[]> {
+    return this._http.get<IMonster[]>(this.serviceUrlPlayer1)
       .do (data => {
-        console.log(JSON.stringify(data))
+        console.log("Player1: " + JSON.stringify(data))
+      })
+      .catch (this.handleError)
+  }
+
+  getPlayer2Monsters(): Observable<IMonster[]> {
+    return this._http.get<IMonster[]>(this.serviceUrlPlayer2)
+      .do (data => {
+        console.log("Player2: " + JSON.stringify(data))
       })
       .catch (this.handleError)
   }

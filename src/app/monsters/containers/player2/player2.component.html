@@ -1,0 +1,14 @@
+<div class="playerContainer">
+  <div class="playerName">Player 2</div>
+  <div class="monsterContainer">
+      <div class="monster">
+        <mg-monster
+          [monster]='selectedMonster'></mg-monster>
+      </div>
+      <div class="monsterList">
+        <mg-monster-list 
+        [monsters]='monsters'
+        (selectedMonster)="selectMonsterHandler($event)"></mg-monster-list>
+      </div>
+  </div>
+</div>

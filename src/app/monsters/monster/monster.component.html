@@ -1,6 +1,13 @@
 <div class="monsterContainer">
-  <div class="mgImage"></div>
-  <div class="mgStats"></div>
+  <div class="mgImage" [style.backgroundImage]="'url(' + monster?.avatarUrl + ')'"></div>
+  <div class="mgStats" >
+    <div *ngIf="monster">
+      Name: {{monster.name}}<br>
+      Vitality: {{monster.vitality}}<br /> 
+      Stamina:  {{monster.stamina}}<br />
+      Strength: {{monster.strength}}
+    </div>
+  </div>
   <div class="mgFooter">
     <div class="controls">
       <div class="control"></div>
