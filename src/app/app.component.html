@@ -1,17 +1,39 @@
-<div class="container">
+<div class=container>
+    <div class="topRow">
+            <div class="headPlate">Monster Game Madness</div>
+            <ul class="menu">
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/profile">Profile</a></li>
+                <li><a routerLink="/warriors">Warriors</a></li>
+                <li><a routerLink="/arena">Fight</a></li>
+                <li style="float:right"><a class="active" routerLink="/about">About</a></li>
+            </ul>
+    </div>
+    <div class="contentRow">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        &copy; 2018 Monster Game Dev<br />
+        Any resemblance with any living real persons is strictly intentional
+    </div>
+</div>
+
+<!-- <div class="container">
     <div class="topRow">
         <div class="headPlate">Monster Game Madness</div>
     </div>
     <div class="contentRow"> 
-        <div class="menu1"></div>
+        <div class="menu1">
+            <mg-monster-list></mg-monster-list>
+        </div>
         <div class="monster1">
-            <mg-monster [monster]='monster1'></mg-monster>
+            <mg-monster [monster]='monster1' class="monster"></mg-monster>
         </div>
         <div class="monster2"></div>
         <div class="menu2"></div>
     </div>
     <div class="bottomRow"></div>
-</div>
+</div> -->
 
 <!-- 
 <div class="heading">Monster Game</div>

@@ -1,0 +1,17 @@
+.monsterItem {
+    width: 2em;
+    height: 2em;
+    border: 4px ridge gold;
+    background-color: rgba(0,0,0,.8);
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+    position: flex;
+    cursor:pointer;
+}
+
+.monsterList {
+   display: grid;
+   grid-template-rows: auto;
+   grid-gap:.5em;
+}

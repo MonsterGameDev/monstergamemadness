@@ -1,4 +1,89 @@
-.heading {
+html body {
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+.topRow {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/images/flames.jpg');
+    
+}
+
+.footer {
+    font-family: Verdana;
+    font-size:.8em;
+    color: white;
+    text-align:center;
+}
+.container {
+    display: grid;
+    grid-template-rows: 2fr 8fr 1fr;
+    grid-gap: .5em;
+    height: 95vh;
+}
+
+.container>div {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.headPlate {
+    width:40%;
+    height:32%;
+    text-align: center;
+    font-family: "Berkshire Swash";
+    font-size:2em;
+    /* border: 3px solid black; */
+    opacity: .8;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top:.5em;
+}
+
+/*MENU****************************************/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    border: 2px ridge black;
+}
+li {
+    float: left;
+    border-right: 2px solid #000000;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Berkshire Swash;
+}
+.active {
+    background-color: rgba(139,0,0,.5);
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+/* .heading {
     width:30%;
     height:10%;
     border:2px double gold;
@@ -9,30 +94,13 @@
     font-family:Berkshire;
 }
 
-html body {
-    height:100%;
-    width:100%;
-    padding:0px;
-    margin:0px;
-}
-.container {
-    display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-gap: .5em;
-    height: 95vh;
-}
-
-.container div {
-    background-color: rgba(0, 0, 0, 0);
-}
-
 .contentRow {
    display:grid;
    grid-template-columns: 2fr 4fr 4fr 2fr;
    grid-gap:.5em;
 }
 
-.contentRow div {
+.contentRow>div {
     background-color: rgba(255,0,0,.2)
 }
 
@@ -52,4 +120,13 @@ html body {
     color: yellow;
 }
 
+.monster1 {
+    text-align: center;    
+}
 
+.menu1 {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+ */

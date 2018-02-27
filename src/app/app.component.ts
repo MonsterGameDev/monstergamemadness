@@ -6,18 +6,4 @@ import { IMonster } from './models/monster';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  monster1: IMonster = {
-    name: "Hans Jensen",
-    vitality: 100,
-    strength: 90,
-    stamina: 100,
-  };
-
-  monster2: IMonster = {
-    name: "Hans Jensen",
-    vitality: 100,
-    strength: 80,
-    stamina: 100,
-  };
-}
+export class AppComponent { }

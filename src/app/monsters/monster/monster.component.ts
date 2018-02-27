@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IMonster } from '../models/monster';
+import { IMonster } from '../../models/monster';
 
 @Component({
   selector: 'mg-monster',

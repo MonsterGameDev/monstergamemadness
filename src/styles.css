@@ -2,4 +2,20 @@
 body {
     background: url('/assets/images/Dungeon_Background_44.png') no-repeat center center fixed;
     background-size: cover;
+    font-family: Verdana;
+    color:white;
 }   
+
+.contentHeading {
+    font-size: 3em;
+    font-family: Tahoma;
+    color: goldenrod;
+    text-align:center
+}
+
+.contentBody {
+    padding-left: 4em;
+    padding-right:4em;
+    overflow-y: scroll;
+    text-align:center;
+}

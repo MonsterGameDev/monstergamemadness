@@ -1,0 +1,42 @@
+.monsterContainer {
+    width:80%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3fr 5fr 1fr;
+    grid-gap: .2em;
+    margin: 0 auto
+
+}
+
+.monsterContainer div {
+    background-color: rgba(0, 0, 0, 1);     
+}
+
+.mgImage {
+    background-image: url('../../../assets/images/fighter1.png');
+    background-size: 100%;
+    border: 1px solid black;
+}
+
+.mgFooter {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:.4em;
+}
+
+.control {
+    width:10px;
+    height:10px;
+    border: 3px ridge gold;
+}
+
+
+.controls>div {
+    background-color:darkred;
+}
